@@ -1,0 +1,33 @@
+#line1 {
+    color: rgb(255, 0, 0);
+    text-align: justify;
+    display: inline-block;  
+    background: green;
+    border: 5px solid rgb(53, 1, 243);
+    text-transform: uppercase;
+}
+
+#my-list {
+  color: royalblue;
+}
+.underline {
+    color: rgb(124, 136, 15) ;
+    text-decoration: underline;
+}
+.block-element {
+   border: 1px solid rgb(252, 0, 0);
+   text-align: center;
+}
+
+.inline-element {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 255);
+    padding-left: 3px;  
+}
+
+.inline-block-element {
+    text-align: justify;
+    display: inline-block;
+    background: rgb(5, 245, 125);
+}
