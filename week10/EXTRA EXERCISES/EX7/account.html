@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <link rel="stylesheet" href="account.css">
+    <script src="account.js"></script>
+</head>
+<body>
+    <form name="frmRegister" action="#" method="post" enctype="multipart/form-data">
+        <table border="1" align="center" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 50%;">
+            <tr>
+                <td colspan="2" align="center" style="background-color: #007BFF; color: white;">
+                    <h3>REGISTER NEW ACCOUNT</h3>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Username:</td>
+                <td><input type="text" name="txtUsername" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td align="right">Password:</td>
+                <td><input type="password" name="txtPassword1" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td align="right">Confirm password:</td>
+                <td><input type="password" name="txtPassword2" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td align="right">Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Phone:</td>
+                <td><input type="text" name="txtPhone" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td align="right">Email:</td>
+                <td><input type="text" name="txtEmail" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td align="right">Favourite:</td>
+                <td>
+                    <input type="checkbox" name="chkMusic"> Music
+                    <input type="checkbox" name="chkReading"> Reading
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Picture:</td>
+                <td><input type="file" name="filePicture"></td>
+            </tr>
+            <tr>
+                <td align="right">Description:</td>
+                <td><textarea name="txtDescription" rows="4" style="width: 100%;"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right">Education level:</td>
+                <td>
+                    <select name="education" style="width: 100%;">
+                        <option value="Aptech">Aptech</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Language:</td>
+                <td>
+                    <select name="language" multiple style="width: 100%;">
+                        <option value="Vietnamese">Vietnamese</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Japanese">Japanese</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

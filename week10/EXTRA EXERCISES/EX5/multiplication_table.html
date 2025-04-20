@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bảng Nhân</title>
+    <title>Multiplication table</title>
     <link rel="stylesheet" href="multiplication_table.css">
     <script src="multiplication_table.js"></script>
 </head>
 <body>
-    <h1>Bảng Nhân</h1>
-    <div class="container">
-        <table id="multiplication-table"></table>
-    </div>
-    
+    <form name="f">
+        <table border="0" align="center">
+            <tr>
+                <td colspan="2" align="center">
+                    <h2>MULTIPLICATION TABLE</h2>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Which multiplication table that you want to display?
+                </td>
+                <td>
+                    <input name="a" size="5" onchange="display()" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <iframe id="view_area" width="230" height="250"></iframe>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
 </body>
 </html>
