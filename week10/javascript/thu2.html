@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EX02</title>
+    <link rel="stylesheet" href="enter_numbers.css">
+    <script src="enter_numbers.js"></script>
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <label for="number1">Nhập số thứ nhất:</label>
+      <input type="number" id="number1" name="number1" required><br><br>
+
+      <label for="number2">Nhập số thứ hai:</label>
+      <input type="number" id="number2" name="number2" required><br><br>
+
+      <input type="submit" value="Tính tổng">
+    </form>
+    <script>
+      document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định của form
+
+        // Lấy giá trị từ các trường nhập liệu
+        var number1 = parseFloat(document.getElementById('number1').value);
+        var number2 = parseFloat(document.getElementById('number2').value);
+
+        // Tính tổng
+        var sum = number1 + number2;
+
+        // Hiển thị kết quả
+        alert('Tổng của ' + number1 + ' và ' + number2 + ' là: ' + sum);
+      });
+    </script>
+  </body>
+</html>

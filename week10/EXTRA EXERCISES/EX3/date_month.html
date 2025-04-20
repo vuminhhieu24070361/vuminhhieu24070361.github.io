@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX3: Nhập Ngày Tháng Năm</title>
+    <link rel="stylesheet" href="date_month.css">
+    <script src="date_month.js"></script>
+</head>
+<body onload="update()">
+    <form name="f">
+        <table border="0" align="center">
+            <tr>
+                <td colspan ="2" align="center">
+                    <h2>Nhập Ngày Tháng Năm</h2>
+                </td> 
+            </tr>
+            <tr>
+                <td align="right">Năm:</td>
+                <td><input name="year" value="2012"
+                    onblur="update()" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Tháng:</td>
+                <td>
+                    <select name="month" onchange="update()">
+                        <option value="1">Tháng 1</option>
+                        <option value="2">Tháng 2</option>
+                        <option value="3">Tháng 3</option>
+                        <option value="4">Tháng 4</option>
+                        <option value="5">Tháng 5</option>
+                        <option value="6">Tháng 6</option>
+                        <option value="7">Tháng 7</option>
+                        <option value="8">Tháng 8</option>
+                        <option value="9">Tháng 9</option>
+                        <option value="10">Tháng 10</option>
+                        <option value="11">Tháng 11</option>
+                        <option value="12">Tháng 12</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Ngày:</td>
+                <td><input name="date" readonly="readonly" /></td>
+        </table>
+
+    </form>
+</body>
+</html>
