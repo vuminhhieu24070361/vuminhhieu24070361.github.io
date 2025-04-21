@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EX02</title>
+    <link rel="stylesheet" href="enter_numbers.css">
+
+  </head>
+
+  <body>
+    <form action="#"  id="form_main" >
+      <input type="number" id="number1" >
+      <br>
+      <button onclick="checkNumber();" id = "check_button">Check</button>
+      <button onclick="resetNew();" style="display: none;" id="reset_button">Reset</button>
+
+      <p id="result"></p>
+    </form>
+    
+    <script>
+      
+      function checkNumber() 
+      {
+        var x = parseInt(document.getElementById("number1").value);
+        if (x % 2 == 0) 
+        {
+          // method 1: create a new element and append it to the form
+          var Result = document.createElement("result");
+          result.innerHTML = "Số " + x + " là số chẵn.";
+          // document.getElementById("form_main").appendChild(Result);
+             
+          // method 2: use append
+
+          //document.getElementById("form_main").append("Số " + x + " là số chẵn.");
+        } 
+        else 
+        {
+          var Result = document.createElement("result");
+          result.innerHTML = "Số " + x + " là số lẻ.";
+          // document.getElementById("form_main").appendChild(Result);
+
+
+
+          //document.getElementById("form_main").append("Số " + x + " là số lẻ.");
+        }
+        document.getElementById("reset_button").style.display = "block"; // Show reset button
+        document.getElementById("check_button").style.display = "none"; // Hide check button
+      }
+      function resetNew() 
+      {
+        document.getElementById("number1").value = " ";
+        document.getElementById("result").innerHTML = " ";
+        document.getElementById("number1").focus();
+        document.getElementById("reset_button").style.display = "none"; // Hide reset button
+        document.getElementById("check_button").style.display = "block"; // Show check button
+      }
+    </script>
+  </body>
+</html>
